@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu site Responsivo</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #3b1538;
+        }
+
+        header{
+            background-color: #3b1538;
+            color: white;
+            text-align: center;
+            padding: 5vh 5%;
+        }
+
+        nav{
+            background-color: #bd129e;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;            
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;            
+        }
+
+        main{
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .destaque{
+            background-color: black;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .cards{
+            display: flex;
+            gap: 20px;
+        }
+
+        .card{
+            width: 33%;
+            min-height: 50vh;
+            background-color: #bd129e;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .card-retangulo{
+            background-color: black;
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            
+        }
+
+        footer{
+            
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 4vh 5%;
+            font-size: 25px;
+        }
+
+
+        /* celular */
+        @media (max-width: 600px){
+            nav{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cards{
+                flex-direction: column;
+            }
+
+            .card{
+                width: 100%;
+            }
+        .card-retangulo{
+          grid-column: span 1;
+        }
+          }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Site black mirror</h1>
+      <p>Um avaliador de pessoas</p>
+    </header>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Amigos</a>
+      <a href="#">conhecer</a>
+    </nav>
+
+    <main>
+        <section class="destaque">
+          <h2>Bem-vindo!</h2>
+        </section>
+
+        <section class="cards">
+          <div class="card">
+            <h2>momento da falsidade</h2>
+            <p>Pelo medo de notas baixas, as pessoas usam sorrisos ensaiados e simpatia artificial no dia a dia. Sentimentos reais como raiva ou tristeza são reprimidos, e as redes sociais exibem vidas perfeitas e fúteis para garantir aceitação e status </p>
+            <img src="https://i.pinimg.com/564x/0f/27/d4/0f27d4579ebebe6d2ba12a8e8df2a845.jpg" alt="Estrela rosa" width="300" height="300" style="margin-top: 20px;">
+          </div>
+
+          <div class="card">
+            <h2>Sistema de avaliaçao</h2>
+            <p>avaliam de 1 a 5 estrelas por qualquer interação do dia a dia. A média dessas notas funciona como um crédito social que define o status do cidadão: pontuações altas dão acesso a privilégios e luxos, enquanto notas baixas geram exclusão social, perda de emprego e isolamento</p>
+            <img src="https://i.redd.it/zej00swip26z.jpg" alt="Estrela rosa" width="300" height="300" style="margin-top: 20px;">
+          </div>
+
+          <div class="card">
+            <h2>Imagem</h2>
+            <p>essa é a imagem do filme de como ela começou e como terminou</p>
+            <img src="https://i.pinimg.com/736x/ea/df/a3/eadfa36c7d081219fc4710420ef082cb.jpg" alt="Estrela rosa" width="300" height="300" style="margin-top: 20px;">
+          </div>
+        </section>
+        <section class="card-retangulo">
+            <h2>Resumo</h2>
+            <p>uma sociedade controlada por um aplicativo de avaliação mútua (de 1 a 5 estrelas). A média de cada pessoa funciona como um crédito social que define seu status: notas altas garantem luxos e privilégios, enquanto notas baixas causam exclusão e isolamento.Para sobreviver, as pessoas vivem em uma falsidade constante, usando sorrisos ensaiados e reprimindo sentimentos reais (como raiva ou tristeza) para evitar rejeição e manter as aparências. A trama acompanha Lacie, uma mulher obcecada em subir sua média para comprar o apartamento dos sonhos, mas que acaba sofrendo um colapso psicológico e uma queda livre social após uma sequência de imprevistos a caminho do casamento de uma amiga rica </p>>
+        </section>
+       <div class="card">
+            <h2>Protagonista</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRO3-1epdZ2x-D973X4LW2y7zrgav_DJCvPv1Eb4A8aQ&s=10" alt="Estrela rosa" width="300" height="300" style="margin-top: 20px;">
+            </div>
+    </main>
+
+    <footer>Meu site - 2026 &copy</footer>
+  </body>
+</html>
